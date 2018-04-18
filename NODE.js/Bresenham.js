@@ -1,5 +1,4 @@
-// Bresenhama algorythm working for every direction of drawingn
-
+// Bresenham's algorithm working for every direction of drawing a line
 
 function setup() {
     createCanvas(512, 512);
@@ -44,17 +43,17 @@ function set_pixel(x, y, c) {
 function draw_line() {
     dx = x1 - x0; dx < 0 ? dx = -dx : null;
     dy = y1 - y0; dy < 0 ? dy = -dy : null;
-    var i = 0;    
-    if(dy>=dx){
-            i = x0;
-            x0 = y0;
-            y0 = i;
-            i = x1;
-            x1 = y1;
-            y1 = i;
-            i = dx;
-            dx = dy;
-            dy = i;
+    var i = 0;
+    if (dy >= dx) {
+        i = x0;
+        x0 = y0;
+        y0 = i;
+        i = x1;
+        x1 = y1;
+        y1 = i;
+        i = dx;
+        dx = dy;
+        dy = i;
     }
 
     Dp = 2 * dy - dx;
@@ -67,11 +66,11 @@ function draw_line() {
     while ((x != x1) && (y != y1)) {
         x < x1 ? x++ : x--;
         if (D < 0) {
-            i > 0 ? set_pixel(y, x, 0): set_pixel(x,y,0);
+            i > 0 ? set_pixel(y, x, 0) : set_pixel(x, y, 0);
             D += Deq;
         } else {
             y < y1 ? y++ : y--;
-            i > 0 ? set_pixel(y, x, 0): set_pixel(x,y,0);            
+            i > 0 ? set_pixel(y, x, 0) : set_pixel(x, y, 0);
             D += Dinc;
         }
     }
