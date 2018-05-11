@@ -3,7 +3,7 @@ const rl = readLine.createInterface({
     input: process.stdin,
     output: process.stdout
 });
-
+var percentage = 0;
 function printPercentage(){
     if(percentage >= 100){
         rl.write("\nZakoczono wczytywanie.")
@@ -11,8 +11,8 @@ function printPercentage(){
     }
     percentage += 1;
     readLine.clearLine(rl,0);
-    readLine(cursorTo(rl,0));
-    rl.write('Postep ${percentage}%')
+    readLine.cursorTo(rl,0);
+    rl.write(`Postep: ${percentage}%`)
 
     setTimeout(printPercentage,100);
 }
