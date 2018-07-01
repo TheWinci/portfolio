@@ -22,10 +22,9 @@ app.use(usersAPI);
 
 app.get('/', (req, res) => {
 	res.render(
-		'home',
+		'login',
 		{
-			title: 'List of users',
-			users: users.list()
+			title: 'List of users'
 		}
 	);
 });
