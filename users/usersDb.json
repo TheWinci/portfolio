@@ -2,26 +2,31 @@
     {
         "id": 1,
         "name": "Jan",
-        "lastName": "Kowalski"
+        "lastName": "Kowalski",
+        "password": "test1"
     },
     {
         "id": 2,
         "name": "Anna",
-        "lastName": "Nowak"
+        "lastName": "Nowak",
+        "password": "test1"
     },
     {
         "id": 3,
         "name": "Tomek",
-        "lastName": "Janicki"
+        "lastName": "Janicki",
+        "password": "test1"
     },
     {
         "id": 4,
         "name": "Ewa",
-        "lastName": "Nosal"
+        "lastName": "Nosal",
+        "password": "test1"
     },
     {
+        "id": 5,
         "name": "Leonardo",
         "lastName": "de Vinci",
-        "id": 5
+        "password": "test1"
     }
 ]
