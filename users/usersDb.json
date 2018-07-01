@@ -1,32 +1,32 @@
 [
-    {
-        "id": 1,
-        "name": "Jan",
-        "lastName": "Kowalski",
-        "password": "test1"
-    },
-    {
-        "id": 2,
-        "name": "Anna",
-        "lastName": "Nowak",
-        "password": "test1"
-    },
-    {
-        "id": 3,
-        "name": "Tomek",
-        "lastName": "Janicki",
-        "password": "test1"
-    },
-    {
-        "id": 4,
-        "name": "Ewa",
-        "lastName": "Nosal",
-        "password": "test1"
-    },
-    {
-        "id": 5,
-        "name": "Leonardo",
-        "lastName": "de Vinci",
-        "password": "test1"
-    }
+  {
+    "id": 1,
+    "name": "Jan",
+    "lastName": "Kowalski",
+    "password": "test1"
+  },
+  {
+    "id": 2,
+    "name": "Anna",
+    "lastName": "Nowak",
+    "password": "test1"
+  },
+  {
+    "id": 3,
+    "name": "Tomek",
+    "lastName": "Janicki",
+    "password": "test1"
+  },
+  {
+    "id": 4,
+    "name": "Ewa",
+    "lastName": "Nosal",
+    "password": "test1"
+  },
+  {
+    "id": 5,
+    "name": "Leonardo",
+    "lastName": "de Vinci",
+    "password": "test1"
+  }
 ]

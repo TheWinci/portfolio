@@ -10,25 +10,25 @@ const app = express();
 const port = 3000;
 
 // disables a header in resposne
-app.disable('x-powered-by'); 
+app.disable('x-powered-by');
 app.use(morgan('tiny'));
 app.engine('handlebars', hbs({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
 
 // serving static files from public directory
-app.use(express.static('public')); 
+app.use(express.static('public'));
 app.use(bodyParser.json());
 app.use(usersAPI);
 
 app.get('/', (req, res) => {
-	res.render(
-		'login',
-		{
-			title: 'List of users'
-		}
-	);
+  res.render(
+    'login',
+    {
+      title: 'List of users'
+    }
+  );
 });
 
 app.listen(port, () => {
-	debug(`Listening on port ${chalk.green(port)}`);
+  debug(`Listening on port ${chalk.green(port)}`);
 });
