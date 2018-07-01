@@ -5,6 +5,7 @@ const morgan = require('morgan');
 const app = express();
 
 const port = 3000;
+app.disable('x-powered-by');
 app.use(morgan('tiny'));
 
 app.get('/', (req,res) => {
