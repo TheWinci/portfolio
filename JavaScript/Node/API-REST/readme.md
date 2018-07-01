@@ -9,3 +9,7 @@
     - **DELETE** removes the user, returns deleted user
 
 all changes are saved to /users/usersDb.json
+
+- [x] create an api
+- [ ] connect it to mongoDB
+- [ ] create login and sign up
